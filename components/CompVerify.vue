@@ -5,7 +5,10 @@ interface FormVerifyState {
   token: string
 }
 const { tokenVerify } = defineProps({
-  tokenVerify: String,
+  tokenVerify: {
+    type: String,
+    default: ""
+  },
 })
 const formRef = ref<FormInstance>()
 const formVerifyState = reactive<FormVerifyState>({

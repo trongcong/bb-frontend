@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import { useRoute } from '#app'
+import ARow from 'ant-design-vue/lib/grid/Row';
+import { LocationQueryValue } from 'vue-router';
 
 const { query } = useRoute()
 const token: string = query.token || ''
